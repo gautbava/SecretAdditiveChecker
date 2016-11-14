@@ -26,7 +26,7 @@ namespace Additive
         static void Main(string[] args)
         {
             int inputNumber;
-            Console.WriteLine("Press enter an integer value.");
+            Console.WriteLine("Please enter any integer value.");
 
 
             if (!int.TryParse(Console.ReadLine(), out inputNumber))
@@ -38,7 +38,7 @@ namespace Additive
             }
 
             Console.WriteLine("Secret function is {0} additive.", new AdditiveChecker().Check(inputNumber) ? "" : "not ");
-            Console.WriteLine("Press enter to close this window");
+            Console.WriteLine("Press enter to close this window.");
             Console.ReadLine();
         }
     }
@@ -72,6 +72,7 @@ namespace Additive
         }
     }
 
+    //class to generate list of all prime numbers less than parameter passed
     public class PrimeTool
     {
         public IList<int> GetPrimes(int limit) // Returns collection of prime numbers up to limit
